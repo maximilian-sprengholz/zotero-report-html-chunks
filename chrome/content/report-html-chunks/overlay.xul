@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://report-html-chunks/skin/overlay.css" type="text/css"?>
+<!DOCTYPE overlay SYSTEM "chrome://report-html-chunks/locale/report-html-chunks.dtd">
+
+<overlay
+    id="report-html-chunks-overlay"
+    xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+    <!--
+    <stringbundleset id="stringbundleset">
+        <stringbundle
+            id="report-html-chunks-bundle"
+            src="chrome://report-html-chunks/locale/report-html-chunks.properties"/>
+    </stringbundleset> -->
+
+		<!-- Item menu -->
+    <menupopup id="zotero-itemmenu">
+				<menuseparator id="zotero-itemmenu-report-html-chunks-separator"/>
+            <menuitem
+                id="zotero-itemmenu-report-html-chunks-item-run"
+                label="&report-html-chunks.item.run.label;"
+                oncommand="Report_HTML_Chunks_Interface_Dialog.init('item');"/>
+    </menupopup>
+
+		<!-- Collections menu -->
+		<menupopup id="zotero-collectionmenu">
+				<menuseparator id="zotero-itemmenu-report-html-chunks-separator"/>
+            <menuitem
+                id="zotero-itemmenu-report-html-chunks-collection-run"
+                label="&report-html-chunks.collection.run.label;"
+                oncommand="Report_HTML_Chunks_Interface_Dialog.init('collection');"/>
+    </menupopup>
+
+		<!-- Include the main extension logic -->
+		<script src="chrome://report-html-chunks/content/report-html-chunks-dialog.js"/>
+		<script src="chrome://zotero/content/include.js"/>
+
+</overlay>

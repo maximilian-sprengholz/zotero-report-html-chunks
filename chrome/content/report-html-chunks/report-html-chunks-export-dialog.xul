@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<!DOCTYPE window SYSTEM "chrome://report-html-chunks/locale/report-html-chunks.dtd">
+
+<dialog xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	title="&report-html-chunks.export.dialog.title;" buttons="cancel,accept"
+	ondialogaccept="Report_HTML_Chunks_Interface_Dialog.accept()"
+	ondialogcancel="Report_HTML_Chunks_Interface_Dialog.cancel()"
+	id="report-html-chunks-export-dialog"
+	onload="Report_HTML_Chunks_Interface_Dialog.index(window.arguments[0], window.arguments[1])">
+
+	<script src="chrome://report-html-chunks/content/report-html-chunks-dialog.js"/>
+	<script src="chrome://report-html-chunks/content/report-html-chunks.js"/>
+	<script src="chrome://report-html-chunks/content/include.js"/>
+	<script src="chrome://zotero/content/include.js"/>
+
+	<!-- <script type="application/javascript">
+	<![CDATA[
+		var observerService = Components.classes["@mozilla.org/observer-service;1"].getService(Components.interfaces.nsIObserverService);
+		observerService.notifyObservers(null, "charsetmenu-selected", "other");
+	]]>
+</script> -->
+
+	<vbox id="report-html-chunks-export-dialog-container" flex="1">
+		<caption id="report-html-chunks-export-dialog-title"
+			label="&report-html-chunks.export.dialog.title;"/>
+
+		<separator class="grooved"/>
+		<caption label="&report-html-chunks.export.dialog.metadata.caption;"/>
+		<description>
+			&report-html-chunks.export.dialog.metadata.desc;
+		</description>
+		<groupbox>
+			<hbox flex="1">
+					<vbox flex="1" id="report-html-chunks-export-dialog-metadata-col1">
+					</vbox>
+					<vbox flex="1" id="report-html-chunks-export-dialog-metadata-col2">
+					</vbox>
+			</hbox>
+		</groupbox>
+		<separator class="thin"/>
+
+		<checkbox id="report-html-chunks-export-dialog-mdToggle"
+			label="&report-html-chunks.export.dialog.mdToggle;"
+			checked="true" oncommand="Report_HTML_Chunks_Interface_Dialog.update('mdToggle')"/>
+
+		<separator class="thin"/>
+
+		<checkbox id="report-html-chunks-export-dialog-includeTags"
+			label="&report-html-chunks.export.dialog.includeTags;"
+			checked="true" oncommand="Report_HTML_Chunks_Interface_Dialog.update('includeTags')"/>
+
+		<separator class="thin"/>
+
+		<hbox align="center">
+			<label value="&report-html-chunks.export.dialog.hlIndex;"/>
+			<menulist id="report-html-chunks-export-dialog-hlIndex" oncommand="Report_HTML_Chunks_Interface_Dialog.update('hlIndex')">
+				<menupopup>
+					<menuitem label="H1" value="h1"/>
+					<menuitem label="H2" value="h2"/>
+					<menuitem label="H3" value="h3"/>
+					<menuitem label="H4" value="h4"/>
+				</menupopup>
+			</menulist>
+		</hbox>
+
+		<separator class="thin"/>
+
+	</vbox>
+</dialog>

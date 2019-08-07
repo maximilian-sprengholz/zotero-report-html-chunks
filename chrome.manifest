@@ -1,0 +1,5 @@
+content	report-html-chunks				chrome/content/report-html-chunks/
+locale	report-html-chunks	en-US		chrome/locale/en-US/report-html-chunks/
+skin	report-html-chunks	default		chrome/skin/default/report-html-chunks/
+
+overlay	chrome://zotero/content/zoteroPane.xul	chrome://report-html-chunks/content/overlay.xul

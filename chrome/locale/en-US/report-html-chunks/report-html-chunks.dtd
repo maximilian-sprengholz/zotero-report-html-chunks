@@ -1,0 +1,9 @@
+<!ENTITY report-html-chunks.item.run.label                                  "Create HTML report chunks from items">
+<!ENTITY report-html-chunks.collection.run.label                            "Create HTML report chunks from collection">
+
+<!ENTITY report-html-chunks.export.dialog.title                             "Report HTML Chunks: Export Options">
+<!ENTITY report-html-chunks.export.dialog.metadata.caption                  "Included fields in metadata table">
+<!ENTITY report-html-chunks.export.dialog.metadata.desc                     "(in addition to item type and authors)">
+<!ENTITY report-html-chunks.export.dialog.mdToggle                          "Make metadata table toggleable">
+<!ENTITY report-html-chunks.export.dialog.includeTags                       "Include tags in report">
+<!ENTITY report-html-chunks.export.dialog.hlIndex                           "Set headline level for item titles">

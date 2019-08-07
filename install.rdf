@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+		xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+
+	<Description about="urn:mozilla:install-manifest">
+		<em:id>maximilian.sprengholz@hu-berlin.de</em:id>
+		<em:name>Report HTML Chunks</em:name>
+		<em:version>0.1</em:version>
+		<em:description>
+			Generate HTML chunks from Zotero bibliography items for further processing to create custom web-based reports
+		</em:description>
+		<em:creator>Maximilian Sprengholz</em:creator>
+		<em:updateURL>https://www.zotero.org/download/plugins.rdf</em:updateURL>
+		<em:type>2</em:type> <!-- type=extension -->
+
+		<em:targetApplication>
+			<Description>
+				<em:id>zotero@chnm.gmu.edu</em:id>
+				<em:minVersion>5.0.0</em:minVersion>
+				<em:maxVersion>5.*</em:maxVersion>
+			</Description>
+		</em:targetApplication>
+
+		<em:localized>
+      <Description>
+        <em:locale>en-US</em:locale>
+        <em:name>Report HTML Chunks</em:name>
+				<em:creator>Maximilian Sprengholz</em:creator>
+        <em:description>
+					Generate HTML chunks from Zotero bibliography items for further processing
+					to create custom web-based reports
+				</em:description>
+      </Description>
+    </em:localized>
+	</Description>
+</RDF>
