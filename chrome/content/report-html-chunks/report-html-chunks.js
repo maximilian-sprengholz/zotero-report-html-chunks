@@ -372,6 +372,7 @@ var Report_HTML_Chunks_Interface = new function() {
 				return table ? content : '';
 			}
 
+			// make tagListStr readable by separating with '--'
 			function _tagsToString (obj) {
 				var tagListStr = '';
 				var sep = ''
@@ -381,7 +382,7 @@ var Report_HTML_Chunks_Interface = new function() {
 						if (i == obj.tags.length-1) {
 							sep = ''
 						}	else {
-							sep = ','
+							sep = '////'
 						}
 						// Exclude automatic tag by Zotero DOI Manager
 						// (Possible future option: Select tags to include)
@@ -420,8 +421,9 @@ var Report_HTML_Chunks_Interface = new function() {
 								// tagColors sorted as defined by user shortcuts (1-9)
 								for (let j=0; j<tagColors.length; j++) {
 									if (tagName == escapeXML(tagColors[j].name)) {
-										// Omit # from class name: Using the Zotero default colors ensures fixed CSS class usage
-										content[j] = '\t\t<span class="tag color' + j + '">' + tagName + '</span>';
+										// Assign classed as colorX based on user shortcuts, add tag to preserve order
+										// to access tag order after export
+										content[j] = '\t\t<span class="tag colored color' + j + '" tagno="' + j + '">' + tagName + '</span>';
 										coloredTag = true;
 									}
 								}
