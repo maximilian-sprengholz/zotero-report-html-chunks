@@ -15,7 +15,7 @@ __Filtering:__
 Item tag information is passed to the HTML document, allowing you to, for example, filter visible Items by tag via JS
 
 __Example:__
-Literature review, items filterable by tags. [See online version](https://amor.cms.hu-berlin.de/~sprenmax/docs/report_html_chunks.html)
+Literature review, items filterable by tags. [See online version](https://amor.cms.hu-berlin.de/~sprenmax/docs/report_html_chunks_example.html)
 
 ![Example Report](https://amor.cms.hu-berlin.de/~sprenmax/docs/report_html_chunks.png)
 [See online version](https://amor.cms.hu-berlin.de/~sprenmax/docs/report_html_chunks.html)
