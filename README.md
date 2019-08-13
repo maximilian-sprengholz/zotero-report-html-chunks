@@ -5,18 +5,19 @@ _Current version: v0.9_
 
 ## What for?
 
-##### Flexibility:
+__Flexibility:__
 You can directly include your report in other HTML documents. You can set the base level of headlines to let the chunk fit in nicely in the target document structure.
 
-##### Look:
+__Look:__
 Style the HTML document containing the exported chunk to your liking via CSS
 
-##### Filtering:
+__Filtering:__
 Item tag information is passed to the HTML document, allowing you to, for example, filter visible Items by tag via JS
 
-##### Example:
+__Example:__
 Literature review, items filterable by tags. [See online](https://amor.cms.hu-berlin.de/~sprenmax/docs/report_html_chunks.html)
-![Example Report](https://amor.cms.hu-berlin.de/home/session/public_html/docs/report_html_chunks.png)
+
+![Example Report](https://amor.cms.hu-berlin.de/~sprenmax/docs/report_html_chunks.png)
 [See online](https://amor.cms.hu-berlin.de/~sprenmax/docs/report_html_chunks.html)
 
 ## Release Notes v0.9
@@ -25,7 +26,7 @@ Literature review, items filterable by tags. [See online](https://amor.cms.hu-be
 - Every bibliography item is exported with an HTML tag ``taglist="tag1////tag2////tag3"``. This allows you to apply filters or address certain tags directly.
 - Item tags are exported within ``<span>`` tags that contain information if the tag is colored in Zotero or not and which Zotero tag color applies.
 
-##### HTML chunk structure for a single bibliography item
+#### HTML chunk structure for a single bibliography item
 
 ```HTML
 <div id="item_ITEMID" class="item ITEMTYPE" taglist="tag1////tag2////tag3////tag4">
@@ -58,7 +59,7 @@ Literature review, items filterable by tags. [See online](https://amor.cms.hu-be
 ```
 Please note that the indentation is not as pretty in the output as displayed here to allow for proper Markdown parsing (depending on the parser, this might be buggy with multiple indented ``<div>`` elements).
 
-##### Sample CSS
+#### Sample CSS
 
 The following CSS sets the ``background-color`` of the ``<span>`` elements according to the 9 pre-defined colors in Zotero. However, if you change the numbers assigned to the colors in Zotero, you also have to change it in the CSS. Fixing the colors with inline CSS would be possible, but inconvenient when other colors are desired. Please note that the other styling rules go nicely together with the CSS of [vue](https://vuejs.org/), but might not in your setup.
 
