@@ -16,7 +16,7 @@ Item tag information is passed to the HTML document, allowing you to, for exampl
 
 ##### Example:
 Literature review, items filterable by tags. [See online](https://amor.cms.hu-berlin.de/~sprenmax/docs/report_html_chunks.html)
-<img src="report_html_chunks.png">
+![Example Report](https://amor.cms.hu-berlin.de/home/session/public_html/docs/report_html_chunks.png)
 [See online](https://amor.cms.hu-berlin.de/~sprenmax/docs/report_html_chunks.html)
 
 ## Release Notes v0.9
