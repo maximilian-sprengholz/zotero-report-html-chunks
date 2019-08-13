@@ -15,10 +15,10 @@ __Filtering:__
 Item tag information is passed to the HTML document, allowing you to, for example, filter visible Items by tag via JS
 
 __Example:__
-Literature review, items filterable by tags. [See online](https://amor.cms.hu-berlin.de/~sprenmax/docs/report_html_chunks.html)
+Literature review, items filterable by tags. [See online version](https://amor.cms.hu-berlin.de/~sprenmax/docs/report_html_chunks.html)
 
-![Example Report](https://amor.cms.hu-berlin.de/~sprenmax/docs/report_html_chunks.png){style="border: 1px solid #d0d0d0"}
-[See online](https://amor.cms.hu-berlin.de/~sprenmax/docs/report_html_chunks.html)
+![Example Report](https://amor.cms.hu-berlin.de/~sprenmax/docs/report_html_chunks.png)
+[See online version](https://amor.cms.hu-berlin.de/~sprenmax/docs/report_html_chunks.html)
 
 ## Release Notes v0.9
 - At the moment, neither a list of attachments nor a list of related items are part of the report (what is the case in Zotero's standard report).
